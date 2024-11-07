@@ -1,0 +1,178 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    background-image: url(img/FreshFruitBasket_Gold.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 7rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem; /* Adjusted for responsiveness */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.square {
+    font-size: 5rem;
+    margin: 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 99px purple;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.square:hover {
+    transform: scale(1.4);
+    box-shadow: 5px 5px 99px white;
+}
+
+.display {
+    border: 2px solid white;
+    height: 12rem;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.talk {
+    font-size: 5rem;
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.cart {
+    font-size: 10rem;
+    margin: 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 99px purple;
+    transition: transform 0.3s;
+}
+
+.cart:hover {
+    transform: scale(1.2);
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bought {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    color:white;
+    justify-content: center;
+}
+
+.wallet {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square {
+        font-size: 4rem;
+    }
+
+    .cart {
+        font-size: 8rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .talk {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .square {
+        font-size: 3rem;
+        margin: 15px 0;
+    }
+
+    .cart {
+        font-size: 6rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .talk {
+        font-size: 3.5rem;
+    }
+
+    .container {
+        font-size: 1.5rem;
+    }
+
+    .display {
+        height: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .square {
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+
+    .cart {
+        font-size: 5rem;
+    }
+
+    .talk {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        font-size: 1rem;
+        gap: 10px;
+    }
+
+    .display {
+        height: 8rem;
+        font-size: 1rem;
+    }
+}

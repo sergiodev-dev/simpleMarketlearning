@@ -1,0 +1,10 @@
+-----------------------
+This is a siple web-based shopping cart where users can add fruits to their carts.
+
+------------------------------------
+FEATURES
+-------------------------------------
+-Add fruits to the shopping cart
+-Remove fruits from the cart
+-Disable the purchase button when the cart is full
+-Responsive design for mobile and desktop users

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>All Market</title>
+</head>
+<body>
+    <h1>Welcome to the Fruiteria</h1>
+
+    <div class="container">
+        <div class="wrapper">
+            <button class="square" title="Kiwi" onclick="addToCart('🥝', 2)">🥝 $2</button>
+            <button class="square" title="Strawberry" onclick="addToCart('🍓', 3)">🍓 $3</button>
+            <button class="square" title="Lemon" onclick="addToCart('🍋', 1)">🍋 $1</button>
+            <button class="square" title="Melon" onclick="addToCart('🍈', 4)">🍈 $4</button>
+            <button class="square" title="Mango" onclick="addToCart('🥭', 5)">🥭 $5</button>
+            <button class="square" title="Pineapple" onclick="addToCart('🍍', 3)">🍍 $3</button>
+            <button class="square" title="Orange" onclick="addToCart('🍊', 2)">🍊 $2</button>
+            <button class="square" title="Pear" onclick="addToCart('🍐', 2)">🍐 $2</button>
+            <button class="square" title="Avocado" onclick="addToCart('🥑', 4)">🥑 $4</button>
+            <button class="square" title="Tropical Drink" onclick="addToCart('🍹', 6)">🍹 $6</button>
+            <button class="square" title="Watermelon" onclick="addToCart('🍉', 5)">🍉 $5</button>
+            <button class="square" title="Tomato" onclick="addToCart('🍅', 2)">🍅 $2</button>
+            <button class="square" title="Grapes" onclick="addToCart('🍇', 3)">🍇 $3</button>
+            <button class="square" title="Banana" onclick="addToCart('🍌', 1)">🍌 $1</button>
+            <button class="square" title="Apple" onclick="addToCart('🍎', 2)">🍎 $2</button>
+            <button class="square" title="Cherries" onclick="addToCart('🍒', 4)">🍒 $4</button>
+            <button class="square" title="Eggplant" onclick="addToCart('🍆', 3)">🍆 $3</button>
+            <button class="square" title="Broccoli" onclick="addToCart('🥦', 2)">🥦 $2</button>
+        </div>
+
+        <div class="box-message">
+            <img src="img/normal.jpg" alt="" height="400">
+            <button class="talk" onclick="talk()">Speak</button>
+            <div class="display"></div>
+        </div>
+
+        <aside>
+            <p>Buy</p>
+            <button id="purchaseButton" class="cart" onclick="purchase()">🛒</button>
+            
+            <div class="bought"></div>
+        </aside>
+    </div>
+</body>
+</html>
